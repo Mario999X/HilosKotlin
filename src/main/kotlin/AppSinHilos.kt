@@ -1,6 +1,5 @@
 import models.Capsula
 import kotlin.system.measureTimeMillis
-import kotlin.time.Duration.Companion.seconds
 
 // Voy a replicar el ejercicio 4 de procesos, pero esta vez sera con una pool de hilos y sin procesos.
 // Este es el caso sin hilos

@@ -22,11 +22,12 @@ private fun initMision() {
     println("Preparando zonas de lanzamiento | Numero de Capsulas: $NUM_CAPSULAS")
     val capsulas = produceCapsulas()
 
-    for (i in 0 until NUM_CAPSULAS) {
-        println("Capsula: ${capsulas[i].id} | Pasajeros: ${capsulas[i].pasajeros}")
-        println("Lanzando capsula, tiempo estimado: ${capsulas[i].tiempoLanzamiento} ")
-        Thread.sleep(capsulas[i].tiempoLanzamiento.inWholeMilliseconds)
+    capsulas.forEach {
+        println("Capsula: ${it.id} | Pasajeros: ${it.pasajeros}")
+        println("Lanzando capsula, tiempo estimado: ${it.tiempoLanzamiento} ")
+        Thread.sleep(it.tiempoLanzamiento.inWholeMilliseconds)
     }
+
 }
 
 private fun produceCapsulas(): ArrayList<Capsula> {

@@ -2,7 +2,6 @@ import models.Capsula
 import models.Trabajador
 import java.util.concurrent.Executors
 import kotlin.system.measureTimeMillis
-import kotlin.time.Duration.Companion.seconds
 
 // Este es el caso usando una Pool de hilos
 private const val NUM_CAPSULAS = 5
